@@ -1,0 +1,45 @@
+{
+	"name": "sbotics-support",
+	"displayName": "sbotics",
+	"description": "suporte para linguagem sboticsR",
+	"version": "1.0.4",
+	"publisher": "WillDeveloper",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Natalnet/sbotics-site/blob/master/images"
+	},
+	"icon": "favicon.png",
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "sboticsR",
+				"aliases": [
+					"sboticsR",
+					"sBoticsR"
+				],
+				"extensions": [
+					".sboticsR"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "sboticsR",
+				"scopeName": "source.sboticsR",
+				"path": "./syntaxes/sboticsR.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "94fc282d-5017-4bf5-81a0-ddf70ea07a2c",
+		"publisherDisplayName": "WILL DEVELOPER",
+		"publisherId": "5c5f51de-5bfc-4ebe-93a9-3edcd8c8b08c"
+	}
+}

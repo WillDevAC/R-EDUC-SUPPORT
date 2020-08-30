@@ -1,0 +1,99 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "sboticsR",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#template"
+		},
+		{
+			"include": "#testando"
+		},
+		{
+			"include": "#sensores"
+		},
+		{
+			"include": "#sinais"
+		},
+		{
+			"include": "#true"
+		},
+		{
+			"include": "#false"
+		},
+		{
+			"include": "#escrever"
+		},
+		{
+			"include": "#condicionais"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.sboticsR",
+				"match": "\\b(se|para|teste|enquanto|para|entao|senao|caso|farei|tarefa|repita|vezes|outros|e|ou)\\b"
+			}]
+		},
+		"template": {
+			"patterns": [{
+				"name": "template.control.sboticsR",
+				"match": "\\b(inicio|fim)\\b"
+			}]
+		},
+		"testando": {
+			"patterns": [{
+				"name": "testando.control.sboticsR",
+				"match": "\\b(frente|tras|esquerda|direita|abrir|baixar|fechar|girarbaixo|girarcima|levantar|mover|motoresquerda|motordireita|velocidademotoresquerda|velocidademotordireita)\\b"
+			}]
+		},
+		"sensores": {
+			"patterns": [{
+				"name": "sensores.control.sboticsR",
+				"match": "\\b(luz|cor|ultra|toque)\\b"
+			}]
+		},
+		"condicionais": {
+			"patterns": [{
+				"name": "condicionais.control.sboticsR",
+				"match": "\\b(inclinacao|corverde|corazul|corvermelha|somar|subtrair|dividir|multiplicar|direcao|esperar|mapeamento|modulo|resto|rotacionar|temalgo|tempo|negativo|resto|concatenar|arredondar|temporizador|zerartemporizador|frenterotacao|transrotacao|registrar|pararregistro|limparregistro|aleatorio|angulogiroatuador|ajustarcor|pi|seno|cosseno|tangente|arcoseno|arcotangente|arcocosseno|limparlinha|registrarnumero|registrartexto|ordenarlistanumero|ordenarlistatexto|percentelistanumero|pertencelistatexto|inverterlistanumero|inverterlistatexto|alterarlistanumero|alterarlistatexto|parasom|pararsons|virarfrequencia|virarhertz|tocarsomhertz)\\b"
+			}]
+		},
+		"sinais": {
+			"patterns": [{
+				"name": "sinais.control.sboticsR",
+				"match": "\\b(numero|booleano|texto)\\b"
+			}]
+		},
+		"false": {
+			"patterns": [{
+				"name": "false.control.sboticsR",
+				"match": "\\b(interromper|parar|limparconsole)\\b"
+			}]
+		},
+		"escrever": {
+			"patterns": [{
+				"name": "escrever.control.sboticsR",
+				"match": "\\b(escrever|escrevernumero|virartexto|comentar)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.sboticsR",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.sboticsR",
+					"match": "\\\\."
+				}
+			]
+		}
+		
+	},
+	"scopeName": "source.sboticsR"
+}
